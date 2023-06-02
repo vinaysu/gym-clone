@@ -1,0 +1,92 @@
+
+.containerStyles {
+    /* display: flex; */
+    justify-content: center;
+    height: 100vh;
+}
+/* .bgHome{
+    opacity: 0.8;
+} */
+/* .transparentBackground {
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 4.3rem;
+    background: linear-gradient(to top, rgb(53, 51, 51), rgb(77, 20, 20));
+} */
+
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -20rem;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center; 
+}
+
+.description h1 {
+    color: white;
+    width: 65%;
+    font-size: 3.5rem;
+    
+   
+}
+
+
+.carousal {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    z-index: 10;
+    /* color: red; */
+    background: black;
+}
+
+.carousal span {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin: 1rem;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 20;
+    margin-top: -1rem;
+}
+
+@media screen and (max-width:850px) {
+    .containerStyles {
+        
+       height: 70vh;
+        
+    }
+    
+    .description {
+        top: -19rem;
+       
+    }
+
+    .description h1 {
+        font-size: 2.5rem;
+        
+    }
+
+}
+@media screen and (max-width:640px) {
+
+    .description {
+        top: -19rem;
+       
+    }
+
+    .description h1 {
+        font-size: 2rem;
+        
+    }
+
+
+}

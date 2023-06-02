@@ -1,0 +1,214 @@
+.trainer_mainBackground{
+    width: 100%;
+    /* background-color: rgb(161, 161, 161); */
+    background-color: black;
+}
+
+.coach_section{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.coach_section > h3{
+    color: rgb(197, 2, 2);
+}
+.coach_section > h1{
+    color: white;
+    margin: 12px 0;
+    font-size: 34px;
+    font-family: "Oswald", sans-serif !important;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+.coach_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coach_box{
+    width: 31%;
+    height: 60vh;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.coach_box_details{
+    position: absolute;
+    bottom: 0%;
+
+    height: 0%;
+    width: 100%;
+    background-color: rgb(13, 13, 13);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* transform: skewY(10deg); */
+    transition: 1s;
+    /* visibility: hidden; */
+
+    overflow: hidden;
+}
+
+.coach_box:hover .coach_box_details{
+    visibility: visible;
+    height: 30%;
+}
+
+.coach_box_details h2{
+    color: white;
+}
+.coach_box_details P{
+    color: white;
+}
+
+
+
+.features_section{
+    width: 80%;
+    margin: auto;
+    padding: 150px 0;
+}
+.features_section > h1{
+    text-align: center;
+    color: white;
+    font-size: 46px;
+    font-weight: 1000;
+    margin-bottom: 20px ;
+}
+.features_section > p{
+    color: gray;
+    text-align: center;
+}
+
+.feature_container{
+    margin-top: 50px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature_box{
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+.feature_box > h3{
+    color: white;
+    font-weight: 1000;
+    margin: 20px;
+    margin-top: 40px;
+}
+.feature_box > p{
+    color: gray;
+    text-align: center;
+}
+
+
+
+
+/* ============= RESPONSIVE ============= */
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+    .coach_section{
+        width: 90%;
+    }
+    .coach_section h1{
+        font-size: 26px;
+    }
+    .coach_box{
+        width: 100%;
+    }
+    .features_section{
+        width: 90%;
+    }
+    .features_section h1{
+        font-size: 28px;
+    }
+    .feature_container{
+        flex-wrap: wrap;
+    }
+    .feature_box{
+        width: 100%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media only screen and (min-width: 500px) {
+    .coach_section h1{
+        font-size: 30px;
+    }
+    .coach_box{
+        width: 100%;
+    }
+    .features_section h1{
+        font-size: 32px;
+    }
+    .feature_container{
+        flex-wrap: wrap;
+    }
+    .feature_box{
+        width: 100%;
+    }
+    .feature_box h3{
+        font-size: 26px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .coach_section{
+        width: 90%;
+    }
+    .coach_section h1{
+        font-size: 30px;
+    }
+    .coach_box{
+        width: 48%;
+    }
+    .features_section{
+        width: 90%;
+    }
+    .features_section h1{
+        font-size: 36px;
+    }
+    .feature_box{
+        width: 48%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .coach_section{
+        width: 80%;
+    }
+    .coach_section h1{
+        font-size: 34px;
+    }
+    .coach_box{
+        width: 31%;
+    }
+    .features_section{
+        width: 80%;
+    }
+    .features_section h1{
+        font-size: 46px;
+    }
+    .feature_box{
+        width: 25%;
+        padding: 0;
+    }
+}

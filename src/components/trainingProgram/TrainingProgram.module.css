@@ -1,0 +1,113 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+z-index: 10;
+}
+.mainContainer h1{
+/* size: 20rem; */
+z-index: 0;
+}
+
+
+.carousal {
+    /* background-color: black; */
+    color: red;
+    min-height: 200px;
+    min-width: 250px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 14px 0px rgb(41, 33, 33);
+}
+
+.carousal_div {
+    padding: 40px;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* border: 1px solid rgb(2, 153, 27); */
+    /* width: 800px; */
+    height: 260px;
+    overflow-x: scroll;
+}
+
+.carousal_div::-webkit-scrollbar {
+    display: none;
+}
+
+.imgText {
+    position: relative;
+    font-size: xx-large;
+    top: 40%;
+
+}
+
+.carousal img {
+    height: 100%;
+    width: 250px;
+    opacity: 0.8;
+    z-index: -1;
+    margin-top: -38px;
+    /* border: 1px solid black ; */
+    border-radius: 2px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: red;
+}
+.buttonContainer span {
+    cursor: pointer;
+}
+.icon{
+     cursor: pointer;
+     padding: 5px;
+     height: 20px;
+     width: 20px;
+     border: 1px solid black;
+     border-radius: 50%;
+
+ }
+
+
+@media screen and (max-width:840px) {
+    .carousal {
+        /* width: 0vw; */
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        align-items: center;
+        /* opacity: 0.4; */
+        z-index: 0;
+        /* margin-top: -50px; */
+    }
+
+
+    .carousal_div {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 50px;
+    }
+
+    .carousal img {
+        /* height: 25rem; */
+        height: 100%;
+
+        
+    }
+    .buttonContainer{
+        visibility: hidden;
+    }
+}

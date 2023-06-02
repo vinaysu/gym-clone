@@ -1,0 +1,190 @@
+.Main_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    background-color: rgb(242, 86, 86) rgba(57, 47, 47, 0.954);
+    height: 80vh;
+padding-bottom: 100px;
+          background: linear-gradient(270deg, #070707, #1a1a38);
+          background-size: 400% 400%;
+          padding-top: 10vh;
+          animation: AnimationName 3s ease infinite;
+      }
+      
+      @keyframes AnimationName {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+      }
+  .Wrapper3{
+    /* margin-top: 2vh; */
+    color: azure;
+    
+  }
+  .Wrapper {
+    background-color: rgba(54, 48, 48, 0.784);
+    color: white;
+    width: 200px;
+    height: 300px;
+    margin-top: 10vh;
+    text-align: center;
+    font-size: small;
+    border-radius: 20px;
+    margin-left: 3vw;
+  }
+  .dollar {
+    color: rgb(43, 210, 43);
+    display: flex;
+    gap: none;
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  .dollar span {
+    font-size: 45px;
+  }
+  .text {
+    font-family: 'Brush Script MT';
+    font-size: 30px;
+  }
+  
+  .content {
+    text-align: start;
+    margin: 30px 0 20px 20px;
+  }
+  .Wrapper_button {
+    padding: 10px 40px;
+    font-size: 2vh;
+    border-radius: 5px;
+  }
+  .box{
+    margin-top: 3.6vh;
+  }
+  .Wrapper2 {
+    margin-top: 7vh;
+    width: 17vw;
+    height: 350px;
+    background-color: rgba(245, 245, 220, 0.785);
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 20px;
+  }
+  .Wrapper2_button {
+    padding: 10px 40px;
+    font-size: 2vh;
+    border-radius: 5px;
+    background-color: greenyellow;
+    /* margin-top: 10px; */
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .Main_Container {
+      display: flex;
+      height: 500px;
+      gap: 3vw;
+    }
+    .content{
+      margin-top: 10px;
+    }
+  
+    .Wrapper {
+      width: 170px;
+      margin-top: 70px;
+      height: 260px;
+    }
+    .Wrapper_button {
+      width: 130px;
+      height: 30px;
+      font-size: 7px;
+      padding: 10px;
+    }
+    .Wrapper2 {
+      width: 200px;
+      margin-top: 50px;
+      height: 60vh;
+    }
+    .Wrapper2_button {
+      height: 6vh;
+      margin: 0;
+      font-size: 8px;
+      width: 17vw;
+      padding: 10px;
+
+    }
+  
+    /* .content {
+      margin-bottom: 20px;
+    } */
+  }
+  
+  @media screen and (max-width: 700px) {
+    .Main_Container {
+      height: 1000px;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .text{
+      margin-top: 4vh;
+      font-size: 25px;
+    }
+    .Wrapper {
+      width: 90%;
+      height: 170px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr 1fr;
+      margin: 30px 0 0 20px;
+      font-size: x-small;
+    }
+    .Wrapper2 {
+      width: 90%;
+      height: 200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr 1fr;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Wrapper_button{
+      margin: 60px 20px 0 0;
+      width: 100px;
+      padding: 5px;
+      font-size: 10px;
+      border: 2px solid rgb(219, 202, 52);
+    }
+  
+    .Wrapper2_button{
+      margin: 90px 20px 0 0;
+      width: 100px;
+      padding: 5px;
+      font-size: 12px;
+      height: 7vh;
+    }
+    .Wrapper3 {
+      margin-left: 40px;
+      margin-top: 10vh;
+    }
+  }
+  @media screen and (max-width: 400px){
+    .Main_Container{
+      height: 1000px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: space-evenly;
+    }
+    .Wrapper2{
+      height: 310px;
+    }
+    .Wrapper3{
+      margin-left: 20px;
+      margin-top: 10vh;
+    }
+  }
+  

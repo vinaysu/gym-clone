@@ -1,0 +1,112 @@
+.container{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: rgb(54, 53, 53);
+    z-index: 40;
+    opacity: 0.9;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 2rem 0.5fr 1fr 3.5fr 0.6fr 3rem;
+}
+
+.icon{
+    grid-column: 2/3;
+    border-radius: 40rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.Links{
+    grid-column: 4/5;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+}
+.btn {
+    display: none;
+}
+.button{
+    grid-template-columns: 5/6;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1100px){
+
+    .button{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }  
+}
+@media screen and  (max-width: 1000px){
+   .container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 2rem 0.5fr 3fr 0.8fr 2rem;
+   }
+   .Links{
+    grid-column: 3/4;
+    justify-content: center;
+    gap: 2rem;
+   }
+   .buttonDiv{
+    display: flex;
+    justify-content: flex-end;
+   }
+}
+@media screen and  (max-width: 800px){
+    .Links{
+        font-size: 1.2rem;
+    }
+    .button{
+        height: 2.4rem;
+        padding: 0;
+        width: 4.7rem;
+        justify-content: center;
+        padding-top: 0.2rem;
+    }
+}
+@media screen and  (max-width: 650px){
+    .Links{
+        font-size: 1rem;
+    }
+}
+@media screen and  (max-width: 600px){
+    .container1{
+        display: grid;
+        grid-template-columns: 2rem 1fr 1fr 2fr 2rem;
+        width: 100%;
+    }
+    .Links{
+        display: none;
+    }
+    .buttonDiv{
+        display: none;
+    }
+    .btn{
+        display: flex;
+        grid-column: 4;
+        font-size: 2rem;
+        justify-content: center;
+    }
+    .mobileLinks {
+        grid-column: 4;
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.446);
+        padding: 1rem;
+    }
+}

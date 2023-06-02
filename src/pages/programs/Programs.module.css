@@ -1,0 +1,9 @@
+.transparentBackground {
+    width: 100%;
+    height: 86vh;
+    position: absolute;
+    z-index: 9;
+    top: 4rem;
+    left: 0;
+    background-image: linear-gradient(to top, #0000000f, #202124);
+}

@@ -1,0 +1,108 @@
+.trainerMain_mainBackground{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.trainer_container{
+    width: 80%;
+    margin: auto;
+}
+
+.heading_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading_part > h1{
+    color: white;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.heading_part > h1 span{
+    border-bottom: 2px solid green;
+    padding-bottom: 5px;
+}
+.heading_part > p{
+    text-align: center;
+    width: 70%;
+    color: gray;
+}
+
+.card_container{
+    margin: 50px 0;
+    width: 100%;
+    /* display: flex; */
+}
+
+.button_part{
+    display: flex;
+    justify-content: center;
+}
+.button_part button{
+    padding: 10px 20px;
+    color: rgb(207, 207, 207);
+    outline: none;
+    border: 2px solid rgb(69, 69, 69);
+    background-color: black;
+    font-size: 12px;
+}
+.button_part button:hover{
+    cursor: pointer;
+
+}
+
+
+
+/* ============= RESPONSIVE ============= */
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+    .trainer_container{
+        width: 90%;
+    }
+    .heading_part{
+        width: 100%;
+    }
+    .heading_part h1{
+        font-size: 28px;
+    }
+    .heading_part p{
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .card_container{
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media only screen and (min-width: 500px) {
+    .heading_part h1{
+        font-size: 32px;
+    }
+    .heading_part p{
+        width: 90%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .heading_part h1{
+        font-size: 36px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .trainer_container{
+        padding: 50px 0;
+    }
+    .heading_part h1{
+        font-size: 40px;
+    }
+}
